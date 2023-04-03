@@ -7,5 +7,10 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  modules: ["nuxt-icons"]
+  modules: ["nuxt-icons", "@pinia/nuxt"],
+  pinia: {
+    autoImports: [
+      "defineStore" // import { defineStore } from 'pinia'
+    ]
+  }
 })
